@@ -1,3 +1,4 @@
+Django==5.2
 annotated-types==0.7.0
 anthropic==0.115.1
 anyio==4.14.1
