@@ -83,10 +83,12 @@ WSGI_APPLICATION = 'docappsystem.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # For Django 3.0+
-    }
+        'default': dj_database_url.config(
+        # Replace the string below with your actual Neon connection URL
+        default='postgresql://neondb_owner:npg_qkUXy6AQhi1v@ep-orange-sky-atu67ez6-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require',
+        conn_max_age=600,
+        ssl_require=True
+
 }
 
 # Password validation
