@@ -88,7 +88,7 @@ DATABASES = {
         default='postgresql://neondb_owner:npg_qkUXy6AQhi1v@ep-orange-sky-atu67ez6-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require',
         conn_max_age=600,
         ssl_require=True
-
+        )
 }
 
 # Password validation
